@@ -11,7 +11,6 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import '../Widgets/fareAmountCollectionDialog.dart';
 import '../Widgets/progressDialog.dart';
 import '../assistance/assistant_methods.dart';
-import '../assistance/black_theme_google_map.dart';
 import '../global/global.dart';
 import '../models/userRideRequestInformation.dart';
 import '../splash_screen/splash_screen.dart';
@@ -203,7 +202,7 @@ class _NewTripScreenState extends State<NewTripScreen> {
       oldLatLng = latLngLiveDriverPosition;
       updateDurationTimeAtRealTime();
 
-      //updating driver location at real time in database
+      //Updating driver location real time via Realtime Database
       Map driverLatLngDataMap = {
         "latitude": onlineDriverCurrentPosition!.latitude.toString(),
         "longitude": onlineDriverCurrentPosition!.longitude.toString(),
@@ -359,12 +358,6 @@ class _NewTripScreenState extends State<NewTripScreen> {
 
               _controllerGoogleMap.complete(controller);
               newTripGoogleMapController = controller;
-
-              if(darkTheme == true){
-                setState(() {
-                  blackThemeGoogleMap(newTripGoogleMapController);
-                });
-              }
 
               setState(() {
                 mapPadding = 350;

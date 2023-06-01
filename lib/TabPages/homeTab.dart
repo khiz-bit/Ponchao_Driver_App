@@ -12,7 +12,6 @@ import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 import '../assistance/assistant_methods.dart';
-import '../assistance/black_theme_google_map.dart';
 import '../global/global.dart';
 
 class HomeTabPage extends StatefulWidget {
@@ -106,8 +105,6 @@ class _HomeTabPageState extends State<HomeTabPage> {
   @override
   Widget build(BuildContext context) {
 
-    bool darkTheme = MediaQuery.of(context).platformBrightness == Brightness.dark;
-
     return Stack(
       children: [
         GoogleMap(
@@ -121,12 +118,6 @@ class _HomeTabPageState extends State<HomeTabPage> {
             _controllerGoogleMap.complete(controller);
 
             newGoogleMapController = controller;
-
-            if(darkTheme == true){
-              setState(() {
-                blackThemeGoogleMap(newGoogleMapController);
-              });
-            }
 
             locateDriverPosition();
           },
@@ -171,7 +162,7 @@ class _HomeTabPageState extends State<HomeTabPage> {
                   }
                 },
                 style: ElevatedButton.styleFrom(
-                    primary: buttonColor,
+                    backgroundColor: buttonColor,
                     padding: EdgeInsets.symmetric(horizontal: 18),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(26),
