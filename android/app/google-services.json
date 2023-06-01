@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "683245559936",
+    "firebase_url": "https://ponchao-2c0bd-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "ponchao-2c0bd",
+    "storage_bucket": "ponchao-2c0bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683245559936:android:6f85a547525830b0078665",
+        "android_client_info": {
+          "package_name": "com.example.ponchao_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEzcsD-CcleSpPyncC9E34daWkqR5Iqg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683245559936:android:005b86d8aea6ffa9078665",
+        "android_client_info": {
+          "package_name": "com.ponchao.driver_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEzcsD-CcleSpPyncC9E34daWkqR5Iqg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
