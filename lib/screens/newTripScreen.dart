@@ -308,7 +308,7 @@ class _NewTripScreenState extends State<NewTripScreen> {
 
     Navigator.pop(context);
 
-    //display fare amount in dialog box
+    //Displaying Fare Amount Via Dialog Box
     showDialog(
         context: context,
         builder: (BuildContext context) => FareAmountCollectionDialog(
@@ -316,7 +316,7 @@ class _NewTripScreenState extends State<NewTripScreen> {
         )
     );
 
-    //save fare amount to driver total earnings
+    //Save the fare amount in Driver Earnings
     saveFareAmountToDriverEarnings(totalFareAmount);
   }
 
